@@ -1,0 +1,80 @@
+.kv-4{
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    /* animation-name: animation;
+    animation-iteration-count:infinite;
+    animation-duration: 1s; */
+}
+.kv-4:hover{
+    animation-name: animation;
+    animation-duration: 2s;
+}
+.dongelek{
+    border: 2px solid;
+    width: 70%;
+    height: 102%;
+}
+.dongelek-2{
+    border: 2px solid red;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    animation-name: dongelek;
+    animation-duration: 4s;
+    animation-iteration-count:infinite ;
+}
+.long{
+   border: 25px solid blue;
+   border-radius: 500px;
+   height: 200px;
+   width: 200px;
+
+   /* border-right: solid 20%;
+   border-left: solid 20%; */
+
+}
+
+@keyframes animation{
+    0%{
+       transform: rotate(190deg);
+        width: 100px;
+        height: 100px;
+    }
+    20%{
+      
+        width: 120px;
+        height: 120px;
+    }
+    50%{
+       width: 150px;
+       height: 150px;
+    }
+    100%{
+        height: 200px;
+        width: 200px; 
+
+    }
+}
+@keyframes dongelek{
+    0%{
+        transform: translate(0%);
+       
+    }
+    100%{
+        transform: translate(410%);
+       
+    }
+}
+@keyframes long{
+    0%{
+       border: 2px solid red;
+      
+    }
+    100%{
+        border: 2px solid red ;
+       
+    }
+}
